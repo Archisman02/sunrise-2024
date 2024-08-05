@@ -7,14 +7,16 @@ export default class Task {
     persona: string;
     group: number;
     completed: boolean;
+    active: boolean
   
-    constructor(id: number, title: string, description: string, persona: string, group: number, completed: boolean = false) {
+    constructor(id: number, title: string, description: string, persona: string, group: number, completed: boolean = false, active: boolean = false) {
       this.id = id;
       this.title = title;
       this.description = description;
       this.persona = persona;
       this.group = group;
       this.completed = completed;
+      this.active = active;
     }
   }
   
