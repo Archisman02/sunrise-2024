@@ -83,46 +83,12 @@ export default function Home() {
       ));
   };
 
-//   return (
-//     <Box sx={{ flexGrow: 1, padding: 2 }}>
-//       <Grid container spacing={2}>
-//         <Grid item xs={4}> 
-//           <Typography variant="h4" gutterBottom>
-//             To-Do
-//           </Typography>
-//           <Grid container spacing={2}>
-//             {renderTasks('To-Do')}
-//           </Grid>
-//         </Grid>
-
-//         <Grid item xs={4}> 
-//           <Typography variant="h4" gutterBottom>
-//             In Progress
-//           </Typography>
-//           <Grid container spacing={2}>
-//             {renderTasks('In Progress')}
-//           </Grid>
-//         </Grid>
-
-//         <Grid item xs={4}> 
-//           <Typography variant="h4" gutterBottom>
-//             Completed
-//           </Typography>
-//           <Grid container spacing={2}>
-//             {renderTasks('Completed')}
-//           </Grid>
-//         </Grid>
-//       </Grid>
-//     </Box>
-//   );
-// }
-
 return (
   <ThemeProvider theme={darkTheme}>
     <CssBaseline />
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h4" sx={{ flexGrow: 1 }}>
           Task Board
         </Typography>
         <IconButton sx={{ ml: 1 }} onClick={handleToggleDarkMode} color="inherit">
@@ -134,7 +100,7 @@ return (
     <Box sx={{ flexGrow: 1, padding: 2 }}>
       <Grid container spacing={2}>
         <Grid item xs={4}>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h5" gutterBottom>
             To-Do
           </Typography>
           <Grid container spacing={2}>
@@ -143,7 +109,7 @@ return (
         </Grid>
 
         <Grid item xs={4}>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h5" gutterBottom>
             In Progress
           </Typography>
           <Grid container spacing={2}>
@@ -152,7 +118,7 @@ return (
         </Grid>
 
         <Grid item xs={4}>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h5" gutterBottom>
             Completed
           </Typography>
           <Grid container spacing={2}>
