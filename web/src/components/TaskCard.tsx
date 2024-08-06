@@ -14,7 +14,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, onDone }) => {
     <Card sx={{ marginBottom: 2, minWidth: 275 }}>
       <CardContent>
         <Typography variant="h5" component="div">
-          {task.title}
+          Task {task.id}: {task.title}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           {task.description}
