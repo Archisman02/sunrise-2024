@@ -14,21 +14,6 @@ export function initializeTasks() {
 }
 
 export function getActiveTasks(): Task[] {
-    // Update tasks
-//   tasks = tasks.map(task => {
-//     // Complete and deactivate tasks in group 1
-//     if (task.group === 1 && task.active) {
-//       return { ...task, completed: true, active: false };
-//     }
-
-//     // Find the next group to activate
-//     if (task.group === 2) {
-//       // Activate tasks in the next group if group 1 tasks are completed
-//       return { ...task, active: true };
-//     }
-
-//     return task;
-//   });
     console.log(tasks);
     return tasks.filter(task => task.active);
 }
